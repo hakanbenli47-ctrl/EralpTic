@@ -409,13 +409,27 @@ export default function Page() {
         havalandırma hortumu ürün bilgisi.
       </footer>
 
-      <div className="mobil-alt-bar">
-        <a href={whatsappLink}>WhatsApp</a>
-        <a href="tel:+905370150863">Ara</a>
-        <a href={konumLink} target="_blank" rel="noopener noreferrer">
-          Konum
-        </a>
-      </div>
+     <div className="mobil-yuzen-butonlar">
+  <a className="mobil-yuzen-satir whatsapp" href={whatsappLink}>
+    <span className="mobil-yuzen-yazi">Hemen iletişime geç</span>
+    <span className="mobil-yuzen-icon">✉</span>
+  </a>
+
+  <a className="mobil-yuzen-satir telefon" href="tel:+905370150863">
+    <span className="mobil-yuzen-yazi">Hemen ara</span>
+    <span className="mobil-yuzen-icon">☎</span>
+  </a>
+
+  <a
+    className="mobil-yuzen-satir konum"
+    href={konumLink}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span className="mobil-yuzen-yazi">Konum</span>
+    <span className="mobil-yuzen-icon">⌖</span>
+  </a>
+</div>
     </main>
   );
 }
